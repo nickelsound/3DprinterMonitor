@@ -3,7 +3,7 @@
 This project provides a Python-based solution for continuously monitoring a MK4/MK4S 3D printer's status. It sends printer state changes and job metadata to IFTTT, ensures snapshots are uploaded to a remote API, and leverages OpenAI for snapshot image analysis, detecting potential print failures.
 
 Below is a detailed explanation of what the script does and how to configure it.
-The hardware setup is described [here](https://www.printables.com/model/1014150-complete-solution-for-mk4s-mmu3-with-enclosure-and)
+The hardware setup is described [here](https://www.printables.com/model/1014150-complete-solution-for-mk4s-mmu3-with-enclosure-and).
 
 ---
 
