@@ -1,0 +1,18 @@
+let text = MakerWebhooks.jsonEvent.JsonPayload;
+
+
+if(text.indexOf("PRINTING") > - 1){
+  // pro PLA a PETG let's run the fan
+  if ((text.indexOf("_PLA_") > -1 || text.indexOf("_PETG_") > -1)) {
+    TplinkTapo.actionTurnOff.skip()
+  } else {
+    TplinkTapo.actionTurnOn.skip()
+  }
+} else if(text.indexOf("FINISHED") > - 1){
+  TplinkTapo.actionTurnOn.skip()
+  Hue.setScene.skip();
+} else {
+  TplinkTapo.actionTurnOn.skip()
+  TplinkTapo.actionTurnOff.skip()
+  Hue.setScene.skip()
+}
