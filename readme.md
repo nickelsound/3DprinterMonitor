@@ -119,7 +119,7 @@ Notes:
    • If OpenAI’s response indicates a likely print failure (“YES”), the script toggles a flag. If the flag is set twice in a row, it calls the “stop printing” IFTTT event.
 
 5. **IFTTT Webhooks:**  
-   • "3dprinter.home_status_changed" event → sends "state" and optionally "display_name".  
+   • "3dprinter_status_changed" event → sends "state" and optionally "display_name".  
    • "should_stop_printing" event → triggered when a second “YES” response is confirmed by OpenAI (scribe: effectively a print failure).
 
 ---
