@@ -137,7 +137,7 @@ Notes:
 
 • **No IFTTT Triggers:**  
   1. Confirm that your environment variables for IFTTT_AUTH_KEY, IFTTT_STOP_PRINTING_EVENT, and IFTTT_STATUS_CHANGED_EVENT are correct.  
-  2. Make sure the URL is formatted properly ("/with/key/..." – not "?with/key=" or "=with/key").  
+  2. Make sure the URL is formatted properly.  
   3. Check your IFTTT applets to ensure they’re listening on the correct event names.
 
 • **Incomplete Snapshots:**  
