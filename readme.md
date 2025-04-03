@@ -94,7 +94,7 @@ Notes:
 
 1. Make sure your .env file is in place and your environment variables are set properly.  
 2. Run the Python script:  
-   » python monitor.py  
+   » python printer_monitor.py  
 
 3. The script will log information about the printer status, snapshots, and any API call responses.  
 4. If your IFTTT events are configured properly, you should receive notifications whenever the print job or state changes.
