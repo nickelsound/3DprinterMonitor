@@ -8,7 +8,7 @@ if(text.indexOf("PRINTING") > - 1){
   } else {
     TplinkTapo.actionTurnOn.skip()
   }
-} else if(text.indexOf("FINISHED") > - 1){
+} else if(text.indexOf("FINISHED") > - 1 || text.indexOf("IDLE") > - 1){
   TplinkTapo.actionTurnOn.skip()
   Hue.setScene.skip();
 } else {
